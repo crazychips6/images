@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chipsfun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">ChipsFun</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">网站介绍</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="hero-content">
+            <h1>欢迎来到ChipsFun</h1>
+            <p>这是一个网站 ⌯ᵔ⩊ᵔ⌯</p>
+            <div>
+                <a href="#projects" class="btn">查看项目 <i class="fas fa-arrow-right"></i></a>
+                <a href="#about" class="btn btn-outline">了解更多 <i class="fas fa-info-circle"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div>
+                <h2>网站介绍 </h2>
+                <p>喵呜～欢迎来到这里喵！这是一个超级可爱的小窝呢 (´｡• ᵕ •｡`) ♡ 虽然还没有什么实质性的内容，但是正在努力建设中喵～</p>
+                <p>这里以后会放很多有趣的东西哒！现在嘛...就先让这里空着吧 (๑•̀ㅂ•́)و✧ 请多多关照喵～</p>
+                <div class="features">
+                    <div class="feature-card">
+                        <h4><i class="fas fa-heart"></i> 超可爱喵</h4>
+                        <p>一切都是粉粉嫩嫩的喵～ ✧*。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4><i class="fas fa-cat"></i> 有一只猫</h4>
+                        <p>喵喵喵～这是当然的喵 (≧◡≦)</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4><i class="fas fa-star"></i> 还在建设中</h4>
+                        <p>正在努力喵... ٩(๑❛ᴗ❛๑)۶</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4><i class="fas fa-magic"></i> 未来可期</h4>
+                        <p>敬请期待喵～ ✧٩(ˊωˋ*)و✧</p>
+                    </div>
+                </div>
+                <a href="#projects" class="btn" style="margin-top: 30px;">去看看喵 <i class="fas fa-paw"></i></a>
+            </div>
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/crazychips6/images@main/full-of-cats.jpg" alt="喵～" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>项目</h2>
+        <p class="subtitle">暂时无法使用</p>
+        <div class="projects-grid">
+            <div class="project-card" onclick="openProject('https://github.com')">
+                <div class="project-image">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="project-content">
+                    <h3>项目管理系统</h3>
+                    <p>一个功能强大的项目管理工具，支持任务分配、进度追踪和团队协作。</p>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <a href="https://github.com" target="_blank">查看详情</a>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProject('https://github.com')">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3>电商平台</h3>
+                    <p>现代化的电子商务解决方案，包含商品展示、购物车和支付功能。</p>
+                    <div class="tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <a href="https://github.com" target="_blank">查看详情</a>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProject('https://github.com')">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3>数据可视化平台</h3>
+                    <p>基于图表库的数据可视化工具，支持多种图表类型和实时数据更新。</p>
+                    <div class="tags">
+                        <span class="tag">D3.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com" target="_blank">查看详情</a>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProject('https://github.com')">
+                <div class="project-image">
+                    <i class="fas fa-blog"></i>
+                </div>
+                <div class="project-content">
+                    <h3>个人博客系统</h3>
+                    <p>轻量级博客平台，支持Markdown编辑、评论系统和文章分类。</p>
+                    <div class="tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Contentful</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                    <a href="https://github.com" target="_blank">查看详情</a>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProject('https://github.com')">
+                <div class="project-image">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="project-content">
+                    <h3>社交网络应用</h3>
+                    <p>社交平台解决方案，包含用户动态、消息系统和好友关系管理。</p>
+                    <div class="tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">GraphQL</span>
+                    </div>
+                    <a href="https://github.com" target="_blank">查看详情</a>
+                </div>
+            </div>
+            <div class="project-card" onclick="openProject('https://github.com')">
+                <div class="project-image">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="project-content">
+                    <h3>在线游戏平台</h3>
+                    <p>网页游戏平台，支持多人在线游戏和实时交互功能。</p>
+                    <div class="tags">
+                        <span class="tag">Phaser</span>
+                        <span class="tag">Socket.io</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                    <a href="https://github.com" target="_blank">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我</h3>
+                    <p>我是一名热爱技术的开发者，专注于创造优雅的数字体验。通过代码和设计，我致力于构建有意义的产品和服务。</p>
+                    <div class="social-icons">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="微信"><i class="fab fa-weixin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">网站介绍</a></li>
+                        <li><a href="#projects">项目展示</a></li>
+                        <li><a href="#contact">联系我</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系信息</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i>邮箱：<a href="mailto:contact@example.com">contact@example.com</a></p>
+                        <p><i class="fas fa-phone"></i>电话：+86 123-4567-8900</p>
+                        <p><i class="fas fa-map-marker-alt"></i>地址：地球村</p>
+                        <p><i class="fab fa-github"></i>GitHub：<a href="https://github.com/crazychips6" target="_blank">crazychips6</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2026 ChipsFun. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
